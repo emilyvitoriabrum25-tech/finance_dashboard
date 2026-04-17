@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/icons8.png">
+</head>
+<body>
+    <div class="container">
+   <header>
+    <h1>CONTROLE FINANCEIRO</h1>
+   </header>
+    <main>
+        <section class="cards">
+            <div class="container-cards">
+                <div class="card">
+                    <h3>Saldo</h3>
+                    <p id="saldo">R$ 0,00</p>
+                </div>
+            <div class="card">
+                <h3>Entradas</h3>
+               <p id="entradaTotal">R$ 0,00</p>
+            </div>    
+            <div class="card">
+                <h3>Saídas</h3>
+                <p id="saidaTotal">R$ 0,00</p>
+            </div>
+        </section>
+        <section class="grafico">
+            <h3>GRÁFICO</h3>
+            <div class="container-barras">
+                <div class="item-barra">
+                    <div class="barra entrada"></div>
+                    <span>ENTRADA</span>
+                </div>
+                <div class="item-barra">
+                    <div class="barra saida"></div>  
+                    <span>SAÍDA</span>  
+                </div>
+                </div>
+        </section>
+    <section class="formulario">   
+      <h3>ADICIONAR MOVIMENTAÇÃO</h3>
+      <input type="text" id="descricao" placeholder="Ex: Mercado">
+      <input type="number" id="valor" placeholder="Ex:200">
+       <select id="tipo">
+        <option value="entrada">Entrada</option>
+        <option value="saida">Saída</option>
+       </select>
+        <button id="botao">ADICIONAR</button>
+    </section>
+    <section class="lista">
+        <h3>HISTÓRICO</h3>
+        <div id="lista"></div>
+    </section>
+    </main>
+<script src="script.js"></script> 
+</body>
+</html>
